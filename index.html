@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Expense-Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="expense-app">
+      <h1>Expense Tracker</h1>
+
+      <div class="summary">
+        <div class="balance">
+          <span>Balance</span>
+          <strong id="balance">$0</strong>
+        </div>
+        <div class="income">
+          <span>Income</span>
+          <strong id="income">$0</strong>
+        </div>
+        <div class="expense">
+          <span>Expense</span>
+          <strong id="expense">$0</strong>
+        </div>
+      </div>
+      <div class="transaction-form">
+        <input type="text" id="transactionInput" placeholder="Description..." />
+        <input type="number" id="amountInput" placeholder="Amount..." />
+        <select id="typeSelect">
+          <option value="income">Income</option>
+          <option value="expense">Expense</option>
+        </select>
+        <select id="categorySelect">
+          <option value="food">Food</option>
+          <option value="transport">Transport</option>
+          <option value="shopping">Shopping</option>
+          <option value="bills">Bills</option>
+          <option value="other">Other</option>
+        </select>
+        <select id="filterCategory">
+          <option value="all">All Category</option>
+          <option value="food">Food</option>
+          <option value="transport">Transport</option>
+          <option value="shopping">Shopping</option>
+          <option value="bills">Bills</option>
+          <option value="other">Other</option>
+        </select>
+        <select id="filterType">
+          <option value="all">All</option>
+          <option value="income">Income</option>
+          <option value="expense">Expense</option>
+        </select>
+        <button id="AddBtn">Add Transaction</button>
+      </div>
+      <div class="transactions">
+        <h2>Transactions</h2>
+        <ul id="transactionList"></ul>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
